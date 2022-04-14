@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace BookShop
+namespace BookShop.TabbedPages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class HomePage : TabbedPage
+    public partial class UserPage : ContentPage
     {
-        public HomePage()
+        public UserPage()
         {
             InitializeComponent();
         }

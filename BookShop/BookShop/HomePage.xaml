@@ -1,12 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BookShop.HomePage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+             x:Class="BookShop.HomePage"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            NavigationPage.HasNavigationBar="False"
+            mc:Ignorable="d"
+            xmlns:lo="clr-namespace:BookShop"
+            xmlns:local="clr-namespace:BookShop.TabbedPages"
+            BarBackgroundColor="#393939"
+            SelectedTabColor="#FCC046"
+            UnselectedTabColor="#C5C7FF">
+
+    <local:HousePage IconImageSource="house.png"/>
+    <local:SearchPage IconImageSource="search.png"/>
+    <local:BusketPage IconImageSource="cart.png"/>
+    <local:UserPage IconImageSource="user.png"/>
+</TabbedPage>
