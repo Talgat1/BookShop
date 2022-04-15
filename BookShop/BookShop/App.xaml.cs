@@ -7,6 +7,7 @@ namespace BookShop
 {
     public partial class App : Application
     {
+        public static string[] genre = new string[4] { "Фэнтези", "Детектив", "Приключения", "Ужасы" };
         public App()
         {
             InitializeComponent();

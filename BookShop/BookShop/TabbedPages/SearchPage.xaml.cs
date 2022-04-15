@@ -16,5 +16,32 @@ namespace BookShop.TabbedPages
         {
             InitializeComponent();
         }
+
+        private async void GenreBtn_Clicked(object sender, EventArgs e)
+        {
+            
+            string result = await DisplayActionSheet("Выберите жанр:", null, null, App.genre);
+
+            switch (result)
+            {
+                case "Фэнтези":
+                    
+                    break;
+
+                case "Детектив":
+                    
+                    break;
+
+                case "Ужасы":
+                    
+                    break;
+
+                case "Приключение":
+                    
+                    break;
+
+            }
+
+        }
     }
 }
