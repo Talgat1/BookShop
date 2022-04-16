@@ -37,7 +37,7 @@
                 </StackLayout>
             </StackLayout>
         </Frame>
-        <ListView x:Name="GoodsLstViw" HasUnevenRows="True" HorizontalOptions="Fill" IsPullToRefreshEnabled="True"  SeparatorVisibility="None">
+        <ListView x:Name="GoodsLstViw" HasUnevenRows="True" HorizontalOptions="Fill" IsPullToRefreshEnabled="True"  SeparatorVisibility="None" ItemTapped="GoodsLstViw_ItemTapped">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>

@@ -12,7 +12,7 @@
             xmlns:local="clr-namespace:BookShop.TabbedPages"
             BarBackgroundColor="#393939"
             SelectedTabColor="#FCC046"
-            UnselectedTabColor="#C5C7FF">
+            UnselectedTabColor="#C5C7FF" Visual="Material">
 
     <local:HousePage IconImageSource="house.png"/>
     <local:SearchPage IconImageSource="search.png"/>

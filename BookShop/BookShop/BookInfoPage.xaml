@@ -22,7 +22,7 @@
 
         <ScrollView>
             <StackLayout>
-                <Image Source="cover.jpg" Margin="40" WidthRequest="200"/>
+                <Image Source="LogoBook.jpg" Margin="40" WidthRequest="200"/>
                 <Label Text="Унесенные ветром" TextColor="White" HorizontalOptions="CenterAndExpand" FontSize="20"/>
                 <Label Text="Маргарет Митчелл" TextColor="Gray" HorizontalOptions="CenterAndExpand"/>
                 <Label Text="Жанр: романтика" TextColor="Gray" HorizontalOptions="StartAndExpand" Margin="10,0"/>

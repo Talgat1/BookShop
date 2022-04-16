@@ -17,5 +17,16 @@ namespace BookShop.Pages
         {
             InitializeComponent();
         }
+
+        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            await Navigation.PopAsync();
+        }
+
+        private async void SendBtn_Clicked(object sender, EventArgs e)
+        {
+            
+            await Navigation.PopAsync();
+        }
     }
 }

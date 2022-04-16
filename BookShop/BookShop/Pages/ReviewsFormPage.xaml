@@ -1,12 +1,120 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BookShop.Pages.ReviewsFormPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+             x:Class="BookShop.Pages.ReviewsFormPage"
+             NavigationPage.HasNavigationBar="False" BackgroundColor="#292626">
+    <StackLayout>
+        <StackLayout BackgroundColor="#303030" Orientation="Horizontal">
+            <Label
+                Padding="10,20"
+                FontAttributes="None"
+                FontFamily="MaterialIconsFont"
+                FontSize="43"
+                HorizontalOptions="Start"
+                Text="chevron_left"
+                TextColor="White"
+                VerticalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label
+                FontSize="20"
+                Text="Оставить отзыв"
+                TextColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
         </StackLayout>
-    </ContentPage.Content>
+
+        <StackLayout BackgroundColor="#303030" HorizontalOptions="FillAndExpand">
+            <StackLayout Margin="30" Orientation="Horizontal">
+                <Image
+                    HeightRequest="100"
+                    Source="profiljpg.jpg"
+                    WidthRequest="100" />
+                <StackLayout>
+                    <Label
+                        Margin="30,30,0,0"
+                        Text="ОБЩАЯ ОЦЕНКА"
+                        TextColor="White"
+                        VerticalOptions="CenterAndExpand" />
+                    <StackLayout Margin="30,0,0,0" Orientation="Horizontal">
+                        <Label
+                            x:Name="star1"
+                            FontFamily="MaterialIconsFont"
+                            FontSize="24"
+                            Text="star_border"
+                            TextColor="White"
+                            VerticalOptions="CenterAndExpand">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer x:Name="star12"  />
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <Label
+                            x:Name="star2"
+                            FontFamily="MaterialIconsFont"
+                            FontSize="24"
+                            Text="star_border"
+                            TextColor="White"
+                            VerticalOptions="CenterAndExpand">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer x:Name="star22"  />
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <Label
+                            x:Name="star3"
+                            FontFamily="MaterialIconsFont"
+                            FontSize="24"
+                            Text="star_border"
+                            TextColor="White"
+                            VerticalOptions="CenterAndExpand">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer x:Name="star32"  />
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <Label
+                            x:Name="star4"
+                            FontFamily="MaterialIconsFont"
+                            FontSize="24"
+                            Text="star_border"
+                            TextColor="White"
+                            VerticalOptions="CenterAndExpand">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer x:Name="star42"  />
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <Label
+                            x:Name="star5"
+                            FontFamily="MaterialIconsFont"
+                            FontSize="24"
+                            Text="star_border"
+                            TextColor="White"
+                            VerticalOptions="CenterAndExpand">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer x:Name="star52"  />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+            <Frame
+                Margin="30"
+                Padding="3"
+                BackgroundColor="#9A9A9A"
+                CornerRadius="10"
+                HeightRequest="400">
+                <Editor
+                    x:Name="ReviewEntry"
+                    BackgroundColor="#303030"
+                    Placeholder="Напишите отзыв..."
+                    PlaceholderColor="#8D8D8D" TextColor="White"  />
+            </Frame>
+
+            <Button
+                x:Name="SendBtn"
+                Margin="10,0,30,20"
+                BackgroundColor="#F06B6D"
+                Clicked="SendBtn_Clicked"
+                HorizontalOptions="EndAndExpand"
+                Text="Отправить" TextColor="White" TextTransform="None" CornerRadius="10"/>
+        </StackLayout>
+    </StackLayout>
 </ContentPage>
